@@ -1,0 +1,106 @@
+Of course. Let's create a detailed PRD that directly addresses the core problem of fostering community and collaboration in a digital environment, with a strong focus on your "vibe-coding" and aesthetic theme concept.
+
+This PRD is for a new product, a platform designed from the ground up to solve this specific problem.
+
+Product Requirements Document: Project Haven
+Product: Haven - An aesthetic, all-in-one digital environment for creative collaboration and community.
+
+Problem Statement: How might we foster a genuine sense of community and facilitate effective peer-to-peer collaboration in a digital environment? Many online platforms feel isolating, and their collaboration tools are often clunky and ineffective.
+
+Vision: To create a digital third place for creative teams—a space that feels as inspiring and comfortable as a favorite coffee shop or studio, where collaboration is seamless and community flourishes naturally.
+
+Date: August 30, 2025
+
+Location: Ahmedabad, Gujarat, India
+
+1. Introduction & Core Concept
+Project Haven is not just a tool; it's an environment. We are building a platform where small teams (students, hackathon groups, indie developers, design studios) can create private, persistent, and highly customizable digital rooms called "Havens."
+
+Each Haven integrates essential collaboration tools (task boards, whiteboards, notes) with seamless communication (chat, voice) and a strong emphasis on shared ambiance and aesthetics. By removing the friction between different apps and creating a shared "vibe," Haven will combat the sense of isolation and make digital collaboration feel more human and engaging.
+
+2. Target Audience
+The Hackathon Team: A temporary group of developers and designers who need to rapidly brainstorm, code, and coordinate in a high-pressure environment. They need tools that are fast, integrated, and facilitate quick communication.
+
+The University Project Group: Students in creative or technical fields (design, architecture, computer science) working together over a semester. They need a persistent space to store files, manage tasks, and hold discussions without losing context.
+
+The Indie Creative Duo: A pair of artists, writers, or developers working on a long-term passion project. They need a space that feels personal and inspiring to maintain motivation and a strong collaborative bond.
+
+3. The Core Experience: The "Haven"
+A "Haven" is the central building block of the platform. It is a private, invite-only digital space.
+
+3.1. Ambiance & Vibe Customization (The "Style/Theme")
+This is the core of the "vibe-coding" experience. The goal is to let teams create a shared sensory environment.
+
+Themes: Each Haven has a customizable theme that dictates the UI's color palette, typography, and icon style.
+
+Examples: "Lo-Fi Cafe," "Cyberpunk Terminal," "Solarpunk Greenhouse," "Minimalist Gallery."
+
+Ambient Soundscapes: The Haven owner can select a shared, looping ambient soundscape for everyone in the room.
+
+Examples: "Rain on a Window," "Quiet Library Murmurs," "Cozy Fireplace," "Synthwave Beats."
+
+Individual users can mute or adjust the volume for themselves.
+
+Interactive Backgrounds: Dynamic, animated backgrounds that subtly react to the time of day or activity within the Haven.
+
+3.2. Integrated Collaboration Suite
+These tools are not separate tabs; they are fluid, integrated panels within the Haven itself.
+
+The Canvas: An infinite, real-time collaborative whiteboard for brainstorming, mind-mapping, and mood boarding.
+
+The Scratchpad: A shared, real-time markdown document for meeting notes, project briefs, or collaborative writing.
+
+The Board: A simple, elegant Kanban board for task management (To Do, In Progress, Done). Tasks can be assigned to members and have deadlines.
+
+The Shelf: A simple, visual file storage area for dropping in assets like images, code snippets, and links.
+
+3.3. Seamless Communication Hub
+Persistent Chat: A dedicated chat channel for the Haven that saves conversation history. Supports threads and @mentions.
+
+Drop-in Voice Pods: Instead of scheduling calls, a Haven has always-on "Voice Pods." Users can see who is in a pod and simply click to join the conversation. This encourages spontaneous, low-friction communication, mimicking turning your chair to talk to a colleague in a real studio.
+
+4. Community Building Features (Beyond a Single Haven)
+The Showcase: A public profile for a team or individual where they can "pin" completed projects from their Havens. This builds a portfolio and a sense of shared accomplishment.
+
+The Discovery Hub: A public space where users can find and join communities centered around specific interests (e.g., "Game Dev Guild," "UI/UX Designers League"). These larger communities can host events and create public, read-only Havens to share resources.
+
+Profiles & Status: User profiles show their skills, projects they've showcased, and a status that reflects what they're doing (e.g., "Brainstorming in 'Project Phoenix' Haven," "Looking for a team for a hackathon").
+
+5. User Stories
+As a design student, I want to invite my team to a Haven with a "Minimalist Gallery" theme so that our project space feels clean, professional, and inspiring while we work on our portfolio.
+
+As a hackathon participant, I want to jump into a Voice Pod with my programmer instantly so that we can debug a critical issue without the hassle of setting up a Zoom call.
+
+As an indie developer, I want to see all our team's tasks, notes, and concept art on one seamless screen so that we don't have to constantly switch between Trello, Google Docs, and Discord.
+
+As a new user, I want to browse the Discovery Hub so that I can find a community of writers and potentially find a partner for my next project.
+
+6. Success Metrics
+Engagement: Average session duration within a Haven.
+
+Collaboration: Number of active Havens created per week; daily active usage of the Canvas, Board, and Scratchpad features.
+
+Community: Percentage of users who join at least one public community; number of connections made through the platform.
+
+Adoption: New user sign-ups and Week 1 retention rate.
+
+7. Monetization (Freemium Model)
+Free Tier:
+
+Create or join up to 3 Havens.
+
+Up to 4 members per Haven.
+
+Limited file storage (e.g., 1 GB).
+
+Access to a basic set of themes and soundscapes.
+
+Pro Tier (Subscription):
+
+Unlimited Havens and members.
+
+Large file storage (e.g., 50 GB).
+
+Access to all premium themes, soundscapes, and advanced customization options.
+
+Team-wide analytics and project archiving.
