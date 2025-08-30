@@ -1,0 +1,109 @@
+## 1. Introduction
+
+### **1.1. Product Vision**
+To create a real-time, interactive online bidding platform that replicates the excitement and mechanics of an IPL-style player auction. The platform will allow users to observe auctions, team administrators to bid on players, and a main administrator to manage the entire process.
+
+### **1.2. Goal**
+The primary goal is to provide a seamless and engaging experience for all user types, ensuring the bidding process is transparent, fair, and efficient.
+
+## 2. User Roles and Permissions
+
+### **2.1. Normal User**
+* **Permissions:**
+    * View active and upcoming auctions.
+    * View player profiles, including stats and bidding history.
+    * View team rosters and wallet information.
+    * No bidding capabilities.
+
+### **2.2. Team Admin**
+* **Permissions:**
+    * All permissions of a Normal User.
+    * **Place bids** on players during an active auction.
+    * View their team's current wallet balance and transaction history.
+    * View their team's roster of acquired players.
+
+### **2.3. Main Admin**
+* **Permissions:**
+    * All permissions of a Team Admin.
+    * **Start and end auctions** for individual players.
+    * **Finalize a bid** and confirm the winning team.
+    * **Add new players** to the auction pool, including their base price and profile details.
+    * **Manage team wallets**, including adding or deducting funds.
+    * View and manage all team rosters.
+    * View a complete history of all auctions.
+
+---
+
+## 3. Functional Requirements
+
+### **3.1. Auction Management**
+* The Main Admin must be able to create a new auction session and add players to it.
+* The system must display a real-time countdown for each player's bidding round.
+* Bids must be registered instantly and displayed to all users in real-time.
+* The platform must prevent bids from being placed after the timer expires.
+* The Main Admin must be able to pause or cancel an ongoing auction.
+
+### **3.2. Bidding Process**
+* Team Admins can only bid when the bidding is open.
+* The minimum bid increment must be pre-defined.
+* The system must validate bids against the team's available wallet balance.
+* The system must display the current highest bid and the highest bidder's team name.
+* Upon a bid being finalized, the player's price must be deducted from the winning team's wallet, and the player must be added to their roster.
+
+### **3.3. Bid Finalization Logic**
+* **Bid Closure:** When the 10-minute timer for a player's auction expires, bidding automatically closes.
+* **Player Status - Sold:** If a bid was placed, the system identifies the highest bid, marks the player as **"Sold"**, deducts the amount from the winning team's wallet, and adds the player to their roster. The Main Admin can review and finalize this sale.
+* **Player Status - Unsold:** If no bids were placed, the system marks the player as **"Unsold"** and adds them to a dedicated "Unsold" list.
+
+### **3.4. Wallet and Player Management**
+* Each team must have a unique wallet with a pre-defined starting value.
+* The Main Admin must have a dashboard to manage all team wallets, including adding or subtracting funds.
+* The Main Admin must be able to add new players with their name, position, skills, and a base price.
+
+---
+
+## 4. Non-Functional Requirements
+
+### **4.1. Performance**
+* The bidding platform must handle real-time data updates without delay, which will require technologies like **WebSockets**.
+* The system must be able to support a large number of concurrent users.
+
+### **4.2. Security**
+* User data, especially wallet information, must be secure.
+* The platform must have a robust authentication system for all user roles.
+
+### **4.3. Usability (UI/UX)**
+* The user interface must be intuitive and easy to navigate for all user types.
+* The bidding process must be clear, with a prominent display of the timer, current bid, and bidder.
+
+---
+
+## 5. Screen Flow and Design
+
+### **5.1. Pre-Auction State Screens**
+* **Main Lobby Screen:** Shows a list of all players available for auction, their base prices, and their team affiliations (if any).
+* **Main Admin Pre-Auction Screen:** The Main Admin sees the same list but also has options to **add new players**, set the auction order, and initiate the auction for a specific player.
+
+### **5.2. Player Profile Screen**
+This screen provides detailed information about a single player.
+* **Header:** Player's name, photo, and current status.
+* **Player Details:** Image, personal info, base price, and key skills.
+* **Auction History:** Displays the live countdown, current highest bid, and the bidding team.
+* **Finalized Status:** Shows the winning team and final bid amount after the auction.
+
+### **5.3. Team Profile Screen**
+This screen provides a comprehensive view of a specific team.
+* **Header:** Team logo and name.
+* **Team Summary:** Wallet balance and count of acquired players.
+* **Team Roster:** A list of all players acquired by the team.
+* **Transaction History:** A chronological list of all money spent and gained.
+
+### **5.4. Post-Auction State Screens**
+* **Final Rosters Screen:** All users can see the final roster of every team, including the players acquired and the total amount spent.
+* **Unsold Players Screen:** A dedicated list of all players who did not receive any bids.
+* **Main Admin Post-Auction Screen:** The Main Admin can choose to re-list unsold players for a "mini-auction" or close the event. They can also export the final results.
+
+### **5.5. User-Specific Screens**
+* **Normal User Dashboard:** Displays the player currently up for auction, a live timer, and a list of upcoming players.
+* **Team Admin Dashboard:** Similar to the Normal User dashboard, but with an added **"Place Bid"** button and a summary of their team's status.
+* **Main Admin Dashboard:** A comprehensive control panel with a view of the current auction, admin controls to **finalize bids**, and an overview of all teams and players.
