@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Magic Eraser Onboarding</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #f9f506;
+      --text-primary: #1C1C0D;
+      --text-secondary: #5C5C5B;
+      --background-color: #FCFCF8;
+      --dot-inactive: #E9E8CE;
+    }
+    body {
+      font-family: 'Spline Sans', sans-serif;
+      background-color: var(--background-color);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-color text-primary">
+<div class="flex flex-col min-h-screen justify-between p-6">
+<header class="flex justify-end">
+<a class="text-primary font-medium" href="#">Skip</a>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center text-center">
+<div class="w-full max-w-sm">
+<img alt="An illustration showing a hand using a magic wand to remove a person from a photograph of a scenic landscape." class="w-full rounded-2xl shadow-lg mb-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIFR5ovAxI999vtSLMMhtprZCLhyRufR4h3GcIqY97OH8rD7cEb-qUwZEk6TYZuZWKAkFJQ66yLKq64r-iq3iUlNj2t7aTrVEndMLVQZw9tiGLyWjg2LySbv9BUg9xQrbU1AFIq9TceQRnM2tg2uRoK-cSRA31i0aQ68wgECzDQC-ti5SWTmxlBIFGU_3TQg91_Tsk9Xj5IZ3iteP2R4ZdMUk-QfVLgzPKSoFZqZSo4NRDvMhqGito0e_EA8Uv6NEAL2xbLLO7F1af"/>
+</div>
+<h1 class="text-3xl font-bold mb-4">Remove Objects</h1>
+<p class="text-secondary max-w-xs mx-auto">
+          Erase unwanted objects from photos with precision.
+        </p>
+</main>
+<footer class="flex flex-col items-center gap-8">
+<div class="flex gap-2">
+<div class="w-2 h-2 rounded-full bg-primary-color"></div>
+<div class="w-2 h-2 rounded-full bg-dot-inactive"></div>
+<div class="w-2 h-2 rounded-full bg-dot-inactive"></div>
+<div class="w-2 h-2 rounded-full bg-dot-inactive"></div>
+<div class="w-2 h-2 rounded-full bg-dot-inactive"></div>
+<div class="w-2 h-2 rounded-full bg-dot-inactive"></div>
+</div>
+<button class="w-full bg-primary-color text-primary font-bold py-4 rounded-full shadow-md hover:bg-yellow-400 transition-colors">
+        Next
+      </button>
+</footer>
+</div>
+
+</body></html>
