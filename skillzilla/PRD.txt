@@ -1,0 +1,195 @@
+Got it 🚀—you want a **full, polished PRD** that can be directly handed over to your design team (Google Stitch in this case) for **UI/UX workflows**. I’ll rewrite everything in one clean, structured PRD format, no loose notes, so they can start creating screens & flows.
+
+---
+
+# 📑 Product Requirements Document (PRD)
+
+**Product Name:** *VibeCode* ✨
+**Version:** 1.0
+**Owner:** \[Your Name]
+**Date:** \[Today’s Date]
+
+---
+
+## 1. 🎯 Product Vision
+
+VibeCode is a **self-paced, gamified learning platform** for Gen-Z and Millennials.
+Learners enter their **current skills and goals**, and the system generates a **personalized learning path** with curated resources (primarily YouTube, localized when possible).
+
+Key differentiators:
+
+* **Gamification mechanics** (XP, streaks, decay, quests, avatars).
+* **Per-path progress tracking** (XP per skill path).
+* **Community-driven** feedback, path sharing, and leaderboards.
+* **Gen-Z aesthetic** (fun, casual, emoji-rich, vibrant gradients).
+
+---
+
+## 2. 👥 Target Audience
+
+1. **Students** – preparing for careers, college subjects, or skill-building.
+2. **Professionals** – upskilling in tech/non-tech domains.
+3. **Freelancers / creators** – learning tools, soft skills, and career growth.
+
+Tone & design should resonate with **Gen-Z productivity culture**:
+
+* Aesthetic UI ✨.
+* Social elements ❤️.
+* Gamified motivation 🎮.
+
+---
+
+## 3. 🔑 Core Features
+
+### 3.1 Onboarding & Path Creation
+
+* User enters:
+
+  * Current skills.
+  * Goal (e.g., “Become Frontend Dev”, “Learn Graphic Design”, “Improve Communication”).
+* System generates:
+
+  * **Learning path** → beginner → intermediate → advanced milestones.
+  * **Task list** with curated resources (YouTube, articles, blogs).
+  * **Local language content** where available.
+
+### 3.2 Gamification System
+
+* **XP Mechanics:**
+
+  * +XP for completing tasks.
+  * -10XP/day penalty per path if no task completed.
+  * Streak bonus 🔥 for consecutive progress.
+  * Per-path XP pools (separate XP for Python path, Design path, etc.).
+* **Levels & Rewards:**
+
+  * Levels unlock badges, themes, avatars.
+  * Example progression: *Learner → Explorer → Grinder → Pro → Master*.
+* **Quests/Challenges:**
+
+  * Extra XP for special missions (e.g., “Finish 3 weekend tasks” or “7-day streak”).
+
+### 3.3 Path Editing (with Quiz Verification)
+
+* Users can add/remove tasks manually.
+* To unlock editing, must **pass a quick quiz** verifying basic knowledge (prevents skipping too far).
+
+### 3.4 Feedback & Social Layer
+
+* Each resource/task supports:
+
+  * Reactions: ❤️ Helpful, 🤯 Confusing, ⏳ Too Long.
+* Feedback affects only **individual path personalization** (not global).
+* Leaderboards show **top learners per path/skill**.
+* Optional **private mode toggle** (hide from leaderboard).
+
+### 3.5 Localization 🌏
+
+* Priority 1: Resource localization (YouTube videos in user’s language).
+* Priority 2: UI translation (menus, notifications).
+
+---
+
+## 4. 🛠 User Flows
+
+### 4.1 Onboarding
+
+1. Sign up / create profile → choose avatar.
+2. Input current skills + goals.
+3. System generates personalized path.
+4. User reviews & confirms → begins journey.
+
+### 4.2 Daily Learning
+
+1. Dashboard shows today’s task(s).
+2. User completes → earns XP → streak updates in real-time.
+3. If missed → daily XP penalty applied.
+4. Dashboard shows streak tracker, quests, progress bar.
+
+### 4.3 Path Editing
+
+1. User clicks “Edit Path”.
+2. Quick quiz prompt → if passed, unlocks editing.
+3. User adds/removes tasks.
+
+### 4.4 Social / Feedback
+
+1. After completing a task, user can react (❤️ 🤯 ⏳).
+2. Feedback modifies resource recommendations for that individual.
+3. User can view leaderboard position per skill path.
+
+---
+
+## 5. 🎨 UI/UX Style Guide
+
+* **Theme:** Fun, Gen-Z, gamified.
+* **Colors:** Neon gradients, pastels (purple, teal, pink).
+* **Fonts:** Rounded sans-serif (Poppins, Inter, Outfit).
+* **Animations:**
+
+  * Smooth XP bar fills.
+  * Confetti 🎉 for level-ups.
+  * Avatar evolutions with levels.
+* **Tone:** Fun, casual, emoji-rich. Example notification:
+
+  * “🔥 You crushed today’s task! +25XP earned!”
+  * “Oops 😢 -10XP lost for inactivity. Bounce back tomorrow!”
+
+---
+
+## 6. 📊 Analytics & Tracking
+
+* **Dashboard Metrics:**
+
+  * XP earned per path.
+  * Current streak length.
+  * Quests & badges unlocked.
+  * Task completion history.
+* **Reflection Journal (AI-assisted):**
+
+  * After task completion → prompt: “What’s your biggest takeaway?”
+  * AI summarizes into learner’s journal.
+
+---
+
+## 7. 📹 Content Curation
+
+* Primary Source: **YouTube** (free, curated, localized).
+* Ranking by: recency, engagement (likes/views), AI quick scan (avoid clickbait).
+* Future Integrations: Paid platforms (Coursera, Udemy, Skillshare).
+* Each task includes:
+
+  * Video/article link.
+  * Estimated time to complete.
+  * Quiz/checkpoint (optional).
+
+---
+
+## 8. 🔧 Technical Requirements (High-Level)
+
+* **Frontend:** React / Next.js (responsive, mobile-first).
+* **Backend:** Django / Node.js + Express (XP logic, path management).
+* **Database:** PostgreSQL (users, XP, paths).
+* **AI Integration:** Gemini / OpenAI → path generation + personalization.
+* **Localization:** YouTube Data API with language filters.
+* **Notifications:** Firebase / OneSignal (web + mobile push).
+
+---
+
+## 9. 📊 Success Metrics
+
+* Daily Active Users (DAU).
+* Average XP earned per week.
+* % of users maintaining streaks > 7 days.
+* Path completion rate.
+* Feedback engagement rate (% of tasks with reactions).
+
+---
+
+## 10. 🔮 Future Enhancements
+
+* **Community Path Marketplace:** Users create + share learning roadmaps.
+* **LinkedIn Integration:** Share badges, achievements.
+* **Mobile-first app** (sync progress across devices).
+* **AI Mentor:** Explain concepts in simple/local language.
+* **Offline Mode:** Download path for low-internet regions.
