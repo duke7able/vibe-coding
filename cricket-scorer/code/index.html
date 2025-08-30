@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="scoreboard">
+            <div class="team-name">Team A</div>
+            <div class="score">
+                <span id="runs">0</span>/<span id="wickets">0</span>
+            </div>
+            <div class="overs">
+                Overs: <span id="overs">0</span>.<span id="balls">0</span>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="runs-buttons">
+                <button onclick="addRuns(0)">0</button>
+                <button onclick="addRuns(1)">1</button>
+                <button onclick="addRuns(2)">2</button>
+                <button onclick="addRuns(3)">3</button>
+                <button onclick="addRuns(4)">4</button>
+                <button onclick="addRuns(6)">6</button>
+            </div>
+            <div class="extra-buttons">
+                <button onclick="addExtra('wide')">Wide</button>
+                <button onclick="addExtra('no-ball')">No Ball</button>
+                <button onclick="addWicket()">Wicket</button>
+            </div>
+            <div class="utility-buttons">
+                <button onclick="undo()">Undo</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
