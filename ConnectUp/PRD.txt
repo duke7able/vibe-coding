@@ -1,0 +1,234 @@
+# AI-Powered Micro Professional Network
+
+**Product Requirement Document (PRD)**
+
+---
+
+## 1. Executive Summary
+
+This document defines a streamlined, AI-powered professional networking platform that eliminates the bloat of traditional networks. Instead of long resumes, feeds, and endorsements, users create concise, skill-first profiles in under three minutes. AI generates polished summaries, enables quick, meaningful connections, and matches users with opportunities. Recruiters and founders benefit from clear, skill-based discovery instead of noise.
+
+---
+
+## 2. Problem Statement
+
+Existing platforms (e.g., LinkedIn) are bloated, time-consuming, and noisy. Professionals want:
+
+- A frictionless way to showcase their skills and experience.
+    
+- To be discovered quickly for jobs or collaborations without endless feeds and endorsements.  
+    Recruiters and founders want:
+    
+- Concise, skill-first profiles instead of bloated CVs.
+    
+- Faster discovery of relevant candidates.
+    
+
+---
+
+## 3. Goals & Guiding Principles
+
+**Goals**
+
+1. Minimize effort for profile creation (under 3 minutes).
+    
+2. Use AI to generate polished, human-like summaries.
+    
+3. Enable fast, intent-based introductions and collaborations.
+    
+4. Provide job/project matching based on essential skills.
+    
+5. Ensure privacy and data control.
+    
+
+**Principles**
+
+- **Essentialism:** include only what drives value.
+    
+- **Professional minimalism:** monochrome UI, typography-first, no vanity metrics.
+    
+- **AI as assistant:** always editable, transparent, and user-controlled.
+    
+- **Mobile-first:** responsive, performant (<200ms load on 4G).
+    
+- **Privacy-first:** reversible, granular visibility settings.
+    
+
+---
+
+## 4. User Personas
+
+**Early-Career Professional (22–28 yrs)**  
+Wants a simple, credible profile and entry-level opportunities. Finds LinkedIn overwhelming.
+
+**Mid-Level Specialist (28–40 yrs)**  
+Wants quick credibility for freelance/collaboration. Already skilled but needs concise visibility.
+
+**Founder / Recruiter**  
+Wants to identify talent quickly without bloated resumes. Prioritizes skill-first discovery.
+
+---
+
+## 5. Core Features
+
+### 5.1 Profile Creation
+
+- Input: Name, role, company, 3–5 skills, 2–3 sentences experience.
+    
+- AI auto-generates summary (3 tone variations, editable, versioned).
+    
+- Optional photo.
+    
+
+### 5.2 AI-Powered Profile Summary
+
+- Crisp, engaging highlight of skills & career strengths.
+    
+- Editable, regeneratable.
+    
+- Version control for transparency.
+    
+
+### 5.3 Connections & Networking
+
+- Skill/industry-based suggestions.
+    
+- “Quick Connect” templates with optional 140-char notes.
+    
+- Lightweight messaging (intro only, no threads).
+    
+
+### 5.4 Job & Project Matching
+
+- Recruiters post simplified listings (role, title, skills).
+    
+- AI ranks matches and explains “why.”
+    
+- Users receive curated suggestions.
+    
+
+### 5.5 Privacy & Control
+
+- Three visibility modes: Public / Connections-only / Private-link.
+    
+- Per-field privacy control.
+    
+- GDPR-style data export & deletion.
+    
+
+### 5.6 Lightweight User Interface
+
+- White background, black text, subtle accent.
+    
+- Mobile-first responsive design.
+    
+- No feeds, ads, or irrelevant clutter.
+    
+
+---
+
+## 6. Success Metrics
+
+- **Onboarding:** ≥ 85% profile completion in <5 minutes.
+    
+- **Summary acceptance:** ≥ 70% users keep/edit AI summary.
+    
+- **Connections:** ≥ 50% of users connect within first week.
+    
+- **Job relevance:** ≥ 60% click-through on AI suggestions.
+    
+- **Retention:** ≥ 40% weekly return at 3 months.
+    
+
+---
+
+## 7. User Flows
+
+**Professional Flow:** Signup → Profile Input → AI Summary → Save/Edit → Suggested Connections → Suggested Jobs → Privacy Settings → Ongoing Use
+
+**Recruiter Flow:** Signup → Post Opportunity → AI Suggests Matches → Contact Candidates
+
+---
+
+## 8. Screen-Level Details
+
+- **Onboarding:** Full-screen card → role, 3 skill chips, 1-line experience → CTA: “Generate summary.”
+    
+- **Summary Editor:** AI text shown with inline “Editable — saved as draft.” Regenerate/alternate tones available.
+    
+- **Discovery:** List of matches with “Why this matches you.” Actions: Quick Connect / View Profile.
+    
+- **Profile Page:** Large role/title, 3–5 skills, summary, privacy toggle. Optional projects.
+    
+- **Quick Connect:** One-line template + 140-char note → confirmation toast.
+    
+- **Recruiter Dashboard:** Left: Post role. Center: Ranked matches. Right: Outreach templates + analytics.
+    
+- **Privacy Settings:** Global + per-field controls, export, delete account.
+    
+
+---
+
+## 9. Technical Requirements
+
+- **Frontend:** React + Next.js, Tailwind CSS, mobile-first design.
+    
+- **Backend:** Node.js (TypeScript) / FastAPI, GraphQL API.
+    
+- **AI Engine:** LLM with custom prompt templates, regeneration, caching.
+    
+- **Database:** PostgreSQL + Redis. S3 for storage.
+    
+- **Auth:** Email magic link + Google OAuth. JWT tokens.
+    
+- **Infrastructure:** Cloud-hosted (AWS/GCP/Azure).
+    
+- **Observability:** Sentry, Prometheus/Grafana, Snowflake/BigQuery for analytics.
+    
+
+---
+
+## 10. Risks & Mitigations
+
+- **Generic AI summaries:** Multiple variations + full editability.
+    
+- **Privacy concerns:** Clear toggles, default-private, GDPR exports.
+    
+- **Cold start problem:** Seed recruiters with incentives, invite campaigns.
+    
+- **Spam/abuse:** Rate-limiting, recruiter verification, moderation tools.
+    
+
+---
+
+## 11. Timeline (MVP – 12 Weeks)
+
+- **Weeks 1–2:** Data model, auth, onboarding UI + draft AI engine.
+    
+- **Weeks 3–6:** AI summaries, discovery feed, Quick Connect.
+    
+- **Weeks 7–9:** Recruiter posting, matching pipeline, privacy controls.
+    
+- **Weeks 10–12:** UX polish, analytics, mobile optimization, closed beta launch.
+    
+
+---
+
+## 12. Future Enhancements
+
+- Resume parsing for skill extraction.
+    
+- Voice/video intros.
+    
+- Calendar integrations.
+    
+- Recruiter bulk outreach + API.
+    
+- Lightweight work samples (no vanity metrics).
+    
+
+---
+
+## 13. Launch Plan
+
+Closed beta with ~1,000 users, focusing on recruiters and mid-level specialists. Validate onboarding, summary acceptance, and job match CTR. Define launch success as ≥85% profile completion, ≥70% summary acceptance, ≥40% first-week engagement.
