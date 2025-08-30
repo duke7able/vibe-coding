@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vibe - Splash Screen</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #38e07b;
+      }
+      body {
+        font-family: 'Spline Sans', sans-serif;
+      }
+      .animate-pulse-slow {
+        animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulse {
+        0%, 100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: .5;
+        }
+      }
+    </style>
+</head>
+<body class="bg-[#111714] text-white">
+<div class="flex items-center justify-center min-h-screen">
+<div class="text-center">
+<h1 class="text-7xl font-bold tracking-wider text-white animate-pulse-slow">Vibe</h1>
+<div class="mt-8 flex justify-center">
+<div class="w-24 h-1 bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-[var(--primary-color)] w-full animate-[stripes_2s_linear_infinite]" style="background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent); background-size: 1rem 1rem;"></div>
+</div>
+</div>
+</div>
+</div>
+<style>
+      @keyframes stripes {
+        from {
+          background-position: 1rem 0;
+        }
+        to {
+          background-position: 0 0;
+        }
+      }
+    </style>
+
+</body></html>
