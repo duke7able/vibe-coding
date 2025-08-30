@@ -1,0 +1,159 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>Vibe Order Tracking</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #38e07b;
+      }
+      .timeline-item.completed .timeline-icon {
+        background-color: var(--primary-color);
+        color: #111714;
+      }
+      .timeline-item.completed .timeline-line {
+        background-color: var(--primary-color);
+      }
+    </style>
+</head>
+<body class="bg-[#111714]" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col text-white dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#29382f] px-10 py-4">
+<div class="flex items-center gap-3 text-white">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-white text-xl font-bold">Vibe</h1>
+</div>
+<div class="flex flex-1 justify-end gap-4 items-center">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-[#29382f] text-white">
+<span class="material-symbols-outlined"> notifications </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCRxvcwUEEg8xP5BB97oKEMoa5q134yliZpY67PEEjaFBJp2XqiDc85t0-1OtFSykoFeciKLnOHI3v8IQ1L_1WRRa-LO2TOXAqYOiDIty-WjCN12HaFPjxqD1nI4PjggKBuVJMnCVFuPxKWunCqaCrjj7vtiAWKp35c-UAF6YjFT3Aj_PAd0SXn4QlSlTHyR5P9D40ZzAM0B5dCui9OEZsAyOircrGEibBtIu4FgHNWfAz2fMV-Nf9m2JfPfNQ0XNlFwZLmq45rvzUA");'></div>
+</div>
+</header>
+<main class="px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-8">
+<div class="layout-content-container flex flex-col max-w-4xl flex-1 gap-8">
+<div>
+<p class="text-4xl font-bold">Your Vibe is on the way!</p>
+<p class="text-[#9eb7a8] text-sm mt-1">Order #123456789</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-8">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAH7Amjyn3H8wbfccTYB3ZGJbaS2cmTw4O-wcPJ84-u5GaCwgkp33KlsbnLj5M0lt9Zqp1kSMZNYZv-SB9T5hzA1IiCEgmVE4QpLM0ZCFYrmiVmXsl4OBLOOU3VtgDxdMK3pEdBpFMLqiyIj5q16JzRDBMAzU5SvalQe2UK1EWdCF3QaXbWny_squGKXPuKZoYQ6T_C3kgD8NzvcRYjJJMZvI2koe-6meBTJMnMXiDRdJ5Fed-3IwV14489TtfJY2eCQ-y5rtSIKlEe");'></div>
+<div class="bg-[#1a241f] rounded-2xl p-6">
+<h3 class="text-xl font-bold mb-6">Order Status</h3>
+<div class="space-y-2">
+<div class="flex items-start timeline-item completed">
+<div class="flex flex-col items-center mr-4">
+<div class="timeline-icon flex items-center justify-center rounded-full size-8"><span class="material-symbols-outlined text-base">check</span></div>
+<div class="timeline-line w-0.5 h-12 bg-[#3d5245]"></div>
+</div>
+<div>
+<p class="font-medium">Order Placed</p>
+<p class="text-sm text-[#9eb7a8]">10:00 AM</p>
+</div>
+</div>
+<div class="flex items-start timeline-item completed">
+<div class="flex flex-col items-center mr-4">
+<div class="timeline-icon flex items-center justify-center rounded-full size-8"><span class="material-symbols-outlined text-base">inventory_2</span></div>
+<div class="timeline-line w-0.5 h-12 bg-[#3d5245]"></div>
+</div>
+<div>
+<p class="font-medium">Preparing Your Order</p>
+<p class="text-sm text-[#9eb7a8]">10:15 AM</p>
+</div>
+</div>
+<div class="flex items-start timeline-item">
+<div class="flex flex-col items-center mr-4">
+<div class="flex items-center justify-center rounded-full size-8 bg-[#29382f] timeline-icon"><span class="material-symbols-outlined text-base">local_shipping</span></div>
+<div class="w-0.5 h-12 bg-[#3d5245] timeline-line"></div>
+</div>
+<div>
+<p class="font-medium text-white/50">Out for Delivery</p>
+<p class="text-sm text-[#9eb7a8]/50">Est. 10:30 AM</p>
+</div>
+</div>
+<div class="flex items-start timeline-item">
+<div class="flex flex-col items-center mr-4">
+<div class="flex items-center justify-center rounded-full size-8 bg-[#29382f] timeline-icon"><span class="material-symbols-outlined text-base">home</span></div>
+</div>
+<div>
+<p class="font-medium text-white/50">Delivered</p>
+<p class="text-sm text-[#9eb7a8]/50">Est. 10:45 AM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-1 space-y-8">
+<div class="bg-[#1a241f] rounded-2xl p-6">
+<h3 class="text-lg font-bold mb-2">Estimated Arrival</h3>
+<p class="text-3xl font-bold text-[var(--primary-color)]">10:45 AM</p>
+</div>
+<div class="bg-[#1a241f] rounded-2xl p-6">
+<h3 class="text-lg font-bold mb-4">Delivery Partner</h3>
+<div class="flex items-center gap-4">
+<img alt="Delivery partner Alex" class="rounded-full h-14 w-14 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4mlPh9-l0EHYOeq-cmTooFwBchwg9VjdsKxn99IM0TE2GFR8fkVHmsm1R3Iw61R-45z6zsFcLik2NBo9iH_XXGyVsmx_G2XYgznJ2isezbF_C5-8O3KkvAf6qBSeroEuKk-j6-VbpXnB3wjFdxEB5h-yST44mj7EjdTKFGoUqibaouJuPnATx19TDTzebJYX_UtrNyPctkng3ePcLwdeuamINVzWf5UYe6FIIJpETPJ1YA6h3ftrtcx_M-d_4Ay4Rq__dvuNVQhaG"/>
+<div>
+<p class="font-medium">Alex</p>
+<p class="text-sm text-[#9eb7a8]">Vibe Delivery Team</p>
+</div>
+<button class="ml-auto flex items-center justify-center rounded-full h-10 w-10 bg-[#29382f] text-white">
+<span class="material-symbols-outlined text-xl">call</span>
+</button>
+</div>
+</div>
+<div class="bg-[#1a241f] rounded-2xl p-6">
+<details>
+<summary class="flex justify-between items-center cursor-pointer">
+<h3 class="text-lg font-bold">Order Summary</h3>
+<span class="material-symbols-outlined transition-transform duration-300 transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-4 space-y-4 pt-4 border-t border-[#29382f]">
+<div class="flex justify-between text-sm">
+<p class="text-[#9eb7a8]">1 x Minimalist Desk Lamp</p>
+<p>$49.99</p>
+</div>
+<div class="flex justify-between text-sm">
+<p class="text-[#9eb7a8]">1 x Ergonomic Chair</p>
+<p>$199.99</p>
+</div>
+<div class="flex justify-between text-sm">
+<p class="text-[#9eb7a8]">1 x Productivity Planner</p>
+<p>$29.99</p>
+</div>
+<div class="pt-4 border-t border-[#29382f] space-y-2">
+<div class="flex justify-between text-sm">
+<p class="text-[#9eb7a8]">Subtotal</p>
+<p>$279.97</p>
+</div>
+<div class="flex justify-between text-sm">
+<p class="text-[#9eb7a8]">Delivery Fee</p>
+<p>$4.99</p>
+</div>
+<div class="flex justify-between font-bold text-base mt-2">
+<p>Total</p>
+<p>$284.96</p>
+</div>
+</div>
+</div>
+</details>
+</div>
+<button class="flex w-full items-center justify-center gap-2 rounded-full h-12 px-6 bg-[var(--primary-color)] text-[#111714] text-base font-bold">
+<span class="material-symbols-outlined">help_outline</span>
+<span>Need Help?</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
