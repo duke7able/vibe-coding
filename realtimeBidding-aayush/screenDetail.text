@@ -1,0 +1,109 @@
+### **1. Normal User Screens**
+
+**1.1. Pre-Auction Lobby**
+* **Header:** Platform Logo, "IPL Auction" title.
+* **Main Content:**
+    * **"Up Next" Section:**
+        * Displays the name, photo, and base price of the player who will be auctioned next.
+        * A "Players Queue" list shows the next few players in line.
+    * **"Auction Players" List:**
+        * A scrollable and searchable list of all players available for auction.
+        * Each player entry includes: Player photo, Name, Base Price, and a small tag indicating their status (e.g., "Available," "Unsold").
+    * **"Teams" List:**
+        * A list of all participating teams. Each entry shows the team logo, name, and current wallet balance.
+
+**1.2. Live Auction Screen**
+* **Header:** Platform Logo, Live Auction title.
+* **Main Bidding Area:**
+    * **Player Card:**
+        * Large photo of the player.
+        * Player Name, Country, and Role (e.g., Batsman, Bowler).
+        * **Base Price:** The starting price.
+    * **Live Bid Information:**
+        * **Current Bid:** A large, prominent number showing the current highest bid amount.
+        * **Bidding Team:** The logo and name of the team that placed the current highest bid.
+        * **Live Countdown Timer:** A real-time countdown clock (e.g., 09:45) showing the time remaining for the bid.
+* **Right Sidebar:**
+    * **Live Bid Feed:** A chronological list of all bids placed, showing the team name and bid amount.
+    * **Teams' Wallet Status:** A real-time leaderboard of all teams, displaying their logo and current wallet balance.
+
+**1.3. Player Profile Screen**
+* **Header:** Player's Name.
+* **Main Content:**
+    * **Player Image:** A large, high-resolution photo.
+    * **Information Panel:**
+        * **Personal Info:** Name, Age, Country.
+        * **Skills:** Primary role (e.g., All-rounder), and a brief description of their strengths.
+        * **Auction Status:** "Sold" or "Unsold."
+        * **Final Bid Details:** If sold, displays the winning team's name and the final bid amount.
+    * **Detailed Stats:** (Optional but recommended) A table or list of key performance metrics (e.g., Matches Played, Runs, Wickets).
+
+---
+
+### **2. Team Admin Screens**
+
+**2.1. Main Dashboard (Combines Live Auction and My Team)**
+* **Header:** Team Logo, Team Name, and a large display of the **Team Wallet Balance**.
+* **Main Content:**
+    * **Live Auction Player:** Same as the Normal User's live screen, but with a crucial addition:
+        * **"Place Bid" Section:**
+            * A button to "Bid [Next Bid Amount]." The amount should be pre-calculated based on the last bid + a minimum increment.
+            * A message indicating if the team has sufficient funds ("You have enough funds") or not ("Insufficient funds").
+* **My Team Roster:**
+    * A list of all players acquired by this specific team.
+    * Each player entry shows: Player photo, Name, Role, and the price at which they were bought.
+
+**2.2. Transaction History Screen**
+* **Header:** Team Logo, Team Name.
+* **Main Content:**
+    * **Wallet Summary:** Current Balance, Total Money Spent, and Total Money Remaining.
+    * **Transaction Log:**
+        * A table with columns: **Player Name, Bid Amount, Transaction Type (Buy/Deduct), and Date/Time.**
+
+---
+
+### **3. Main Admin Screens**
+
+**3.1. Main Control Panel**
+* **Header:** "Main Admin Dashboard," Platform Logo.
+* **Key Metrics:**
+    * **Overall Progress:** Total players listed, players sold, players unsold.
+    * **Financial Summary:** Total money spent by all teams, total money remaining across all teams.
+* **Live Auction Management:**
+    * **Current Player:** Displays the player currently up for auction with a large card.
+    * **Control Buttons:**
+        * **"Start Bidding":** Begins the 10-minute timer for the current player.
+        * **"Finalize Bid":** Confirms the sale to the highest bidder.
+        * **"Move to Unsold":** Manually ends the bidding and moves the player to the unsold list.
+        * **"Pause/Resume Auction":** Allows for a break.
+        * **"Next Player":** Moves to the next player in the queue.
+* **Quick Links:** Buttons to navigate to other management screens.
+
+**3.2. Player Management Screen**
+* **Header:** "Manage Players."
+* **Main Content:**
+    * **"Add New Player" Section:**
+        * Input fields for: **Player Name (text), Country (dropdown), Role (dropdown), Base Price (number), and Player Photo (file upload).**
+        * A **"Save Player"** button.
+    * **Player List Table:**
+        * A table with columns: **Player Name, Base Price, Current Status (e.g., "Available," "Sold," "Unsold"), and Actions.**
+        * **Actions:** "Edit" and "Delete" buttons for each player entry.
+
+**3.3. Team Management Screen**
+* **Header:** "Manage Teams."
+* **Main Content:**
+    * **Team List Table:**
+        * A table with columns: **Team Name, Current Wallet Balance, and Actions.**
+        * **Actions:**
+            * **"Add/Deduct Funds" button:** Opens a modal with an input field to enter a value.
+            * **"View Roster" button:** Navigates to the team's profile.
+    * **"Add New Team" Section:**
+        * Input fields for: **Team Name (text), Wallet Initial Value (number), and Team Logo (file upload).**
+        * A **"Create Team"** button.
+
+**3.4. Auction History and Reports**
+* **Header:** "Auction Reports."
+* **Main Content:**
+    * **Sold Players List:** A table showing all sold players with details: **Player Name, Winning Team, Final Bid Price.**
+    * **Unsold Players List:** A table showing all unsold players with details: **Player Name, Base Price, Reason for Unsold (e.g., No bids received).**
+    * **Final Roster Report:** A downloadable report (e.g., CSV, PDF) summarizing the final roster and total spending for each team.

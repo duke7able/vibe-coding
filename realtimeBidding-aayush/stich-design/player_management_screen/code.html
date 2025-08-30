@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #ea2a33;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="flex-grow">
+<header class="bg-white shadow-sm sticky top-0 z-10">
+<div class="flex items-center p-4 justify-between">
+<button class="text-gray-800 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-100">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="text-gray-900 text-lg font-bold leading-tight tracking-tight flex-1 text-center">Manage Players</h1>
+<div class="size-10"></div>
+</div>
+</header>
+<main class="p-4 sm:p-6 space-y-8">
+<section>
+<h2 class="text-gray-900 text-2xl font-bold leading-tight tracking-tight mb-4">Add New Player</h2>
+<div class="bg-white rounded-lg shadow-sm p-4 space-y-4">
+<input class="form-input w-full rounded-md border-gray-300 bg-gray-50 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] transition" placeholder="Player Name" type="text"/>
+<select class="form-select w-full rounded-md border-gray-300 bg-gray-50 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] transition">
+<option disabled="" selected="">Country</option>
+<option value="india">India</option>
+<option value="australia">Australia</option>
+<option value="england">England</option>
+</select>
+<select class="form-select w-full rounded-md border-gray-300 bg-gray-50 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] transition">
+<option disabled="" selected="">Role</option>
+<option value="batsman">Batsman</option>
+<option value="bowler">Bowler</option>
+<option value="all-rounder">All-Rounder</option>
+<option value="wicket-keeper">Wicket-Keeper</option>
+</select>
+<input class="form-input w-full rounded-md border-gray-300 bg-gray-50 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] transition" placeholder="Base Price" type="number"/>
+<div class="flex items-center space-x-3">
+<input class="hidden" id="player-photo" type="file"/>
+<label class="flex-grow w-full px-4 py-2 text-center text-gray-600 bg-gray-100 border border-dashed border-gray-300 rounded-md cursor-pointer hover:bg-gray-200 transition" for="player-photo">
+                  Upload Player Photo
+                </label>
+</div>
+<button class="w-full h-12 px-6 bg-[var(--primary-color)] text-white text-base font-bold rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)] transition-colors">
+                Save Player
+              </button>
+</div>
+</section>
+<section>
+<h2 class="text-gray-900 text-2xl font-bold leading-tight tracking-tight mb-4">Player List</h2>
+<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+<ul class="divide-y divide-gray-200">
+<li class="p-4 flex items-center justify-between">
+<div>
+<p class="text-gray-800 text-base font-semibold">Ethan Carter</p>
+<p class="text-gray-500 text-sm">Base Price: $50,000</p>
+<p class="text-green-600 text-sm font-medium mt-1">Status: Available</p>
+</div>
+<div class="flex items-center space-x-2">
+<button class="flex items-center justify-center size-9 rounded-full text-gray-600 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.5L16.732 3.732z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="flex items-center justify-center size-9 rounded-full text-gray-600 hover:bg-gray-100 hover:text-red-500 transition">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</li>
+<li class="p-4 flex items-center justify-between">
+<div>
+<p class="text-gray-800 text-base font-semibold">Olivia Bennett</p>
+<p class="text-gray-500 text-sm">Base Price: $75,000</p>
+<p class="text-red-600 text-sm font-medium mt-1">Status: Sold</p>
+</div>
+<div class="flex items-center space-x-2">
+<button class="flex items-center justify-center size-9 rounded-full text-gray-600 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.5L16.732 3.732z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="flex items-center justify-center size-9 rounded-full text-gray-600 hover:bg-gray-100 hover:text-red-500 transition">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</li>
+<li class="p-4 flex items-center justify-between">
+<div>
+<p class="text-gray-800 text-base font-semibold">Noah Thompson</p>
+<p class="text-gray-500 text-sm">Base Price: $60,000</p>
+<p class="text-green-600 text-sm font-medium mt-1">Status: Available</p>
+</div>
+<div class="flex items-center space-x-2">
+<button class="flex items-center justify-center size-9 rounded-full text-gray-600 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.5L16.732 3.732z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="flex items-center justify-center size-9 rounded-full text-gray-600 hover:bg-gray-100 hover:text-red-500 transition">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</main>
+</div>
+<nav class="bg-white border-t border-gray-200 sticky bottom-0 z-10">
+<div class="flex justify-around max-w-screen-sm mx-auto">
+<a class="flex flex-col items-center justify-center flex-1 py-2 text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-xs font-medium">Lobby</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 py-2 text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.636 18.364a9 9 0 010-12.728m12.728 0A9 9 0 015.636 5.636m12.728 12.728A9 9 0 015.636 18.364m9.9-7.072a5 5 0 01-7.072 0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-xs font-medium">Live Auction</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 py-2 text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-xs font-medium">Profile</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 py-2 text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-xs font-medium">My Team</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 py-2 text-[var(--primary-color)] font-semibold transition-colors" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"></path></svg>
+<span class="text-xs">Admin</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>
